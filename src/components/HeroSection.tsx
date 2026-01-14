@@ -2,6 +2,7 @@ import { ChevronDown } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useInView, useReducedMotion } from 'motion/react';
 import heroImage from "figma:asset/8682058a9534d47877696cc4562c83a1f3371f8d.png";
+import CollectionCard from './CollectionCard';
 
 interface HeroSectionProps {
   onExploreClick?: (event?: React.MouseEvent) => void;
@@ -166,6 +167,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
       >
         <ChevronDown className="w-5 h-5 text-[#fdfcf9] animate-bounce" />
       </motion.div>
+      
     </section>
   );
 }

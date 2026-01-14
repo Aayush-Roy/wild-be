@@ -14,7 +14,7 @@ const ProductDetailsModal: React.FC<Props> = ({ product, isOpen, onClose }) => {
   const [selectedSize, setSelectedSize] = useState<string>("");
   const [selectedColor, setSelectedColor] = useState<string>("");
   const [quantity, setQuantity] = useState(1);
-
+console.log("product", product);
   if (!isOpen) return null;
 
   const images = product.images && product.images.length > 0 

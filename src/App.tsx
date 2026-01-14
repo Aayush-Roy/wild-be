@@ -17,6 +17,8 @@ import { CartItem, ProductDetailPage } from './components/ProductDetailPage';
 import { PageTransition } from './components/PageTransition';
 import { LoadingAnimation } from './components/LoadingAnimation';
 import TraditionalProducts from './components/small/TraditionalProducts';
+import CollectionCard from './components/CollectionCard';
+import GenderCollections from './components/GenderCollection';
 type PageType = 'home' | 'collections' | 'ourStory' | 'craftsmanship' | 'menCollections' | 'womenCatalogue' | 'collectionCatalogue';
 
 export default function App() {
@@ -342,6 +344,11 @@ export default function App() {
        <div>
        <TraditionalProducts/>
       </div>
+      <div>
+        <CollectionCard/>
+        <GenderCollections/>
+      </div>
+     
       <ExperienceFooterWrapper>
         <ExperienceSection onCollectionClick={navigateToCollections} />
         <Footer 
