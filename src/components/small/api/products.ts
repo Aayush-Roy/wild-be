@@ -46,7 +46,7 @@ interface ProductResponse {
 
 export const fetchProducts = async (): Promise<ProductResponse> => {
   try {
-    const res = await fetch("https://sohwais-be.onrender.com/api/products");
+    const res = await fetch("http://localhost:5000/api/products");
     console.log("API Response:", res);
     
     if (!res.ok) {
