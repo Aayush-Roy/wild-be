@@ -760,9 +760,9 @@ export default function App() {
       />
       <ArtisanSection onCraftsmanshipClick={navigateToCraftsmanship} />
       <CraftsmanshipSection />
-      <div>
+      {/* <div>
         <TraditionalProducts/>
-      </div>
+      </div> */}
      
       <ExperienceFooterWrapper>
         <ExperienceSection onCollectionClick={navigateToCollections} />
