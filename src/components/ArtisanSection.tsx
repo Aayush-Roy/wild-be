@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useInView, useReducedMotion } from 'motion/react';
-import artisanImage from "figma:asset/3913b99a86a9d2b13f68582e78ae345fd88eb42e.png";
+// import artisanImage from "figma:asset/3913b99a86a9d2b13f68582e78ae345fd88eb42e.png";
+import artisanImage from "../assets/indigo.png"
 
 interface ArtisanSectionProps {
   onCraftsmanshipClick?: (event?: React.MouseEvent) => void;
