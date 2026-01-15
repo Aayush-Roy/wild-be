@@ -37,7 +37,7 @@ export function Footer({ onOurStoryClick, onCraftsmanshipClick, onCollectionClic
                 Founder
               </p>
               <p className="text-[#fdfcf9]/70 text-[13px] tracking-[0.5px] font-['Cormorant_Garamond',serif] mt-1">
-                Md. Daniyal Ansari
+                Md. Danial Ansari
               </p>
             </div>
           </div>

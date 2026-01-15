@@ -1,7 +1,9 @@
 import { ChevronDown } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useInView, useReducedMotion } from 'motion/react';
-import heroImage from "figma:asset/8682058a9534d47877696cc4562c83a1f3371f8d.png";
+// import heroImage from "figma:asset/Hero.png";
+// 8682058a9534d47877696cc4562c83a1f3371f8d
+import heroImage from "../assets/Hero.png"
 import CollectionCard from './CollectionCard';
 
 interface HeroSectionProps {
