@@ -84,6 +84,15 @@ export function ProductPage({
   const [showCollectionFilter, setShowCollectionFilter] = useState(false);
   const [uniqueCollections, setUniqueCollections] = useState<string[]>([]);
 
+  useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'instant'
+  });
+}, []);
+
+
   // सभी products fetch करें
   const fetchAllProducts = async () => {
     try {
@@ -273,9 +282,17 @@ export function ProductPage({
     setSelectedCollections([]);
   };
 
+  // const handleBackToProducts = () => {
+  //   setSelectedProduct(null);
+  // };
   const handleBackToProducts = () => {
-    setSelectedProduct(null);
-  };
+  setSelectedProduct(null);
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'instant'
+  });
+};
 
   // Get final price (with discount)
   const getFinalPrice = (price: number, discount: number) => {
