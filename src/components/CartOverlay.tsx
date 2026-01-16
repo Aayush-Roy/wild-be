@@ -540,13 +540,10 @@ export function CartOverlay({
                 <span>Subtotal</span>
                 <span>₹ {subtotal.toLocaleString('en-IN')}</span>
               </div>
-              <div className="flex justify-between text-[12px] sm:text-[13px] tracking-[0.5px] font-['Cormorant_Garamond',serif] text-[#2c1810]">
-                <span>Shipping</span>
-                <span>{shipping === 0 ? 'Free' : `₹ ${shipping.toLocaleString('en-IN')}`}</span>
-              </div>
+              
               <div className="flex justify-between text-[16px] sm:text-[18px] tracking-[1px] font-['Cinzel_Decorative',serif] text-[#2c1810] pt-3 border-t border-[#2c1810]/10">
                 <span>Total</span>
-                <span>₹ {total.toLocaleString('en-IN')}</span>
+                {/* <span>₹ {total.toLocaleString('en-IN')}</span> */}
               </div>
             </div>
 
