@@ -416,7 +416,7 @@ export function CartOverlay({
 }: CartOverlayProps) {
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   const shipping = subtotal > 0 ? (subtotal > 2999 ? 0 : 99) : 0;
-  const total = subtotal + shipping;
+  const total = subtotal;
 
   const handleProceedToCheckout = () => {
     onClose(); // Close cart overlay
@@ -543,7 +543,7 @@ export function CartOverlay({
               
               <div className="flex justify-between text-[16px] sm:text-[18px] tracking-[1px] font-['Cinzel_Decorative',serif] text-[#2c1810] pt-3 border-t border-[#2c1810]/10">
                 <span>Total</span>
-                {/* <span>₹ {total.toLocaleString('en-IN')}</span> */}
+                <span>₹ {total.toLocaleString('en-IN')}</span>
               </div>
             </div>
 
